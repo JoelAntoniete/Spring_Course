@@ -17,12 +17,12 @@ public class EmployeeRestController {
     }
 
     @GetMapping("/employees")
-    private List<Employee> findAll(){
+    public List<Employee> findAll(){
         return employeeService.findAll();
     }
 
     @GetMapping("/employees/{employeeId}")
-    private Employee getEmployee(@PathVariable int employeeId){
+    public Employee getEmployee(@PathVariable int employeeId){
         Employee theEmployee = employeeService.findByid(employeeId);
         if(theEmployee == null){
             throw new RuntimeException("Employee is not found = " + employeeId);
@@ -40,6 +40,13 @@ public class EmployeeRestController {
 
         Employee dbEmployee = employeeService.save(theEmployee);
 
+        return dbEmployee;
+    }
+
+    @PutMapping("/employees")
+    public Employee updateEmployee(@RequestBody Employee employee){
+
+        Employee dbEmployee = employeeService.save(employee);
         return dbEmployee;
     }
 
