@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06b5d6b5-70de-488c-9735-1ee1f476659f" name="Changes" comment="&quot;configuracoes iniciais para o uso do spring security&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="06b5d6b5-70de-488c-9735-1ee1f476659f" name="Changes" comment="&quot;configuracaoes dos usuarios em memoria&quot;">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1721343808425</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&quot;configuracaoes dos usuarios em memoria&quot;">
+      <created>1721344921653</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721344921653</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +133,7 @@
     <MESSAGE value="&quot;Criacao do modulo Spring security&quot;" />
     <MESSAGE value="&quot;adicionando a dependencia do Spring security&quot;" />
     <MESSAGE value="&quot;configuracoes iniciais para o uso do spring security&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;configuracoes iniciais para o uso do spring security&quot;" />
+    <MESSAGE value="&quot;configuracaoes dos usuarios em memoria&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;configuracaoes dos usuarios em memoria&quot;" />
   </component>
 </project>
