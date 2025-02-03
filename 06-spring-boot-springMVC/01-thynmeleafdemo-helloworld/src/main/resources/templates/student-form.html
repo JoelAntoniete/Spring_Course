@@ -29,6 +29,17 @@ de colocar * antes dos parenteses -->
 -->
     <option th:each="tempCountry : ${countries}" th:value="${tempCountry}" th:text="${tempCountry}" />
 
+
+    <br><br>
+
+    Favorite Programming Language:
+
+    <input type="radio" th:field="*{favoriteLanguage}" th:value="Go">Go</input>
+    <input type="radio" th:field="*{favoriteLanguage}" th:value="Java">Java</input>
+    <input type="radio" th:field="*{favoriteLanguage}" th:value="Python">Python</input>
+
+    <br><br>
+
   </select>
 
   <br><br>
