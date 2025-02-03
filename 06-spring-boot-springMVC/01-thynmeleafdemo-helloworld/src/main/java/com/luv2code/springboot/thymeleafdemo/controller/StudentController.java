@@ -16,6 +16,9 @@ public class StudentController {
     //para pegar a lista de paises de properties precisamos fazer uma lista, e colocar a annotation @Value
     @Value("${countries}")
     private List<String> countries ;
+
+    @Value("${languages}")
+    private List<String> languages;
     @GetMapping("/showStudentForm")
     public String showForm(Model theModel){
 
@@ -25,6 +28,8 @@ public class StudentController {
 
         //adicionar a lista no model
         theModel.addAttribute("countries", countries);
+
+        theModel.addAttribute("languages", languages);
 
         return "student-form";
     }
