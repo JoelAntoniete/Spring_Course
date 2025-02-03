@@ -1,31 +1,26 @@
 package com.luv2code.springboot.thymeleafdemo.model;
 
 public class Student {
-    private String fristname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
 
     public Student() {
     }
 
-    public Student(String fristname, String lastname) {
-        this.fristname = fristname;
-        this.lastname = lastname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getFristname() {
-        return fristname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setFristname(String fristname) {
-        this.fristname = fristname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }
 
