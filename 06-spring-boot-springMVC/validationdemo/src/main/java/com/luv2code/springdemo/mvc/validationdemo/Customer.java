@@ -8,6 +8,7 @@ public class Customer {
     @Size(min = 1, message = "is required...")
     private String lastName = "";
 
+    @NotNull(message = "is required...")
     @Min(value=0, message="must be greater tham or equal to zero")
     @Max(value=10, message="must be less tham or equal to zero")
     private int freePasses;
