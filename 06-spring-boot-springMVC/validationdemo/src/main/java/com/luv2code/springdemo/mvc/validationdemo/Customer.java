@@ -1,20 +1,33 @@
 package com.luv2code.springdemo.mvc.validationdemo;
 
+import com.luv2code.springdemo.mvc.validationdemo.validation.CourseCode;
 import jakarta.validation.constraints.*;
 
 public class Customer {
     private String firstName;
-    @NotNull(message = "is required...")
-    @Size(min = 1, message = "is required...")
+
+    @NotNull(message="is required")
+    @Size(min=1, message="is required")
     private String lastName = "";
 
-    @NotNull(message = "is required...")
-    @Min(value=0, message="must be greater tham or equal to zero")
-    @Max(value=10, message="must be less tham or equal to zero")
-    private int freePasses;
+    @NotNull(message="is required")
+    @Min(value=0, message="must be greater than or equal to zero")
+    @Max(value=10, message="must be less than or equal to 10")
+    private Integer freePasses;
 
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 chars/digits")
     private String postalCode;
+
+    @CourseCode(value="TOPS", message="must start with TOPS")
+    private String courseCode;
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
 
     public String getPostalCode() {
         return postalCode;
@@ -24,11 +37,11 @@ public class Customer {
         this.postalCode = postalCode;
     }
 
-    public int getFreePasses() {
+    public Integer getFreePasses() {
         return freePasses;
     }
 
-    public void setFreePasses(int freePasses) {
+    public void setFreePasses(Integer freePasses) {
         this.freePasses = freePasses;
     }
 
